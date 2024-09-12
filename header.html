@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG_web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar-container">
+        <nav>
+            <div class="nav-left">
+                <a href="#kezdolap">Munkatársaink</a>
+                <a href="#rolunk">Büszkeségeink</a>
+                <a href="#szolgaltatasok">Galéria</a>
+                <a href="#szolgaltatasok">Dokumentumok</a>
+
+            </div>
+            <div class="nav-center">
+                <div class="nav-logo">
+                    <img src="img\logos\logo2.png" alt="Kis Logó">
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="#">Elérhetőségek</a>
+                <a href="#">Gyerekvédelem</a>
+                <a href="#">Adatkezelési tájékoztató</a>
+
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="img\logos\logo.png" alt="Nagy Logó">
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="#kezdolap">Kezdőlap</a>
+            <a href="#rolunk">Rólunk</a>
+            <a href="#szolgaltatasok">Szolgáltatások</a>
+            <a href="tel:+36123456789">Telefon</a>
+            <a href="mailto:info@pelda.hu">Email</a>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 250) {
+                document.body.classList.add('scrolled');
+            } else {
+                document.body.classList.remove('scrolled');
+            }
+        });
+
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
