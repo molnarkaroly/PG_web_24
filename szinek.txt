@@ -1,0 +1,4 @@
+alap-pl-nav:      #3f486c
+piros:            #e31e25
+150-szine:        #e0daac
+letoltes gombok:  #5cb85c
