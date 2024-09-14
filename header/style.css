@@ -1,0 +1,143 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 2000px; /* A görgetés demonstrálásához */
+}
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav {
+    background-color: #3f486c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+}
+.nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.logo-container {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    transition: height 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 10px;
+    transition: all 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.logo img {
+    max-width: 1500px;
+    transition: all 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.nav-logo {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.nav-logo img {
+    max-height: 40px;
+}
+.scrolled .logo-container {
+    height: 0;
+}
+.scrolled .logo {
+    transform: translateX(-50%) translateY(-100%);
+}
+.scrolled .nav-logo {
+    opacity: 1;
+    transform: translateY(0);
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.mobile-menu a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .logo img {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .nav-left, .nav-right {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .mobile-menu.active {
+        display: block;
+    }
+    .nav-logo img {
+        left: 20px;
+    }
+
+    .logo img {
+        max-width: 700px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .logo img {
+        max-width: 600px;
+    }
+}
+@media (max-width: 625px) {
+    .logo img {
+        max-width: 450px;
+    }
+}
