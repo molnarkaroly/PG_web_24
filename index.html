@@ -9,11 +9,14 @@
 </head>
 <body>
 
-   <!-- <div class="nyiltnapok-kep ">
-        <img src="img/index_page/nyiltnapok.jpg" alt="">
-    </div>
--->
+
+
+
+
     <div class="gallery">
+        <div class="nyiltnapok-kep ">
+            <img src="img/index_page/nyiltnapok.jpg" alt="">
+        </div>
         <div class="image-container hidden">
             <img src="img/index_page/tortenet.jpg" alt="Kép 1">
             <div class="image-text">Kezdetektól napjainkig</div>
@@ -34,6 +37,8 @@
         </div>
     </div>
 
+
+
     <script>
         const gallery = document.querySelector('.gallery');
         const images = document.querySelectorAll('.image-container');
@@ -41,7 +46,7 @@
 
         function checkScroll() {
             const galleryRect = gallery.getBoundingClientRect();
-            const triggerPoint = window.innerHeight / 3; // Képernyő közepe
+            const triggerPoint = window.innerHeight /5; 
 
             if (galleryRect.top <= triggerPoint && !animationTriggered) {
                 animationTriggered = true;
@@ -62,10 +67,13 @@
 
         window.addEventListener('scroll', checkScroll);
         window.addEventListener('load', () => {
-            gallery.style.marginTop = '25%';
+            gallery.style.marginTop = '10%';
             checkScroll();
         });
         window.addEventListener('resize', checkScroll);
+
+
+
     </script>
 </body>
 </html>

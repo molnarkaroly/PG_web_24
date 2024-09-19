@@ -7,12 +7,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 window.addEventListener('scroll', function() {
-    if (window.scrollY > 250) {
+    if (window.scrollY > 50) {
         document.body.classList.add('scrolled');
     } else {
         document.body.classList.remove('scrolled');
     }
 });
+
+
 
 document.querySelector('.hamburger').addEventListener('click', function() {
     document.querySelector('.mobile-menu').classList.toggle('active');

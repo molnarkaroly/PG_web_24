@@ -91,20 +91,48 @@ body {
     .image-container {
         width: calc(50% - 20px);
     }
+    .nyiltnapok-kep{
+        padding-top: 5%;
+        padding-left: 6%;
+    }
+}
+
+@media (max-width: 800px) {
+    .image-container {
+        width: calc(50% - 20px);
+    }
+    .nyiltnapok-kep{
+        padding-top: 10%;
+        padding-left: 6%;
+    }
 }
 
 @media (max-width: 600px) {
     .image-container {
         width: 100%;
     }
+    .image-container:nth-child(1) {
+        padding-top: 25%;
+    }
+    .nyiltnapok-kep{
+        padding-top: 15%;
+        padding-left: 6%;
+    }
 }
+
+
+
+
 
 .nyiltnapok-kep img{
     width: 80%;
-    padding-left: 10%;
-    margin-top: 13%;
+    padding-top: 5%;
+    position: static;
+    padding-left: 5%;
     z-index: -2;
 }
+
+
 
 .dsplynone{
     display: none;
