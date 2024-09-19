@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PG_Web_24</title>
+    <title>Görgetésre Megjelenő Képgaléria</title>
     <script src="header/header.js"> </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
-
-
-
+   <!-- <div class="nyiltnapok-kep ">
+        <img src="img/index_page/nyiltnapok.jpg" alt="">
+    </div>
+-->
     <div class="gallery">
-        <div class="nyiltnapok-kep ">
-            <img src="img/index_page/nyiltnapok.jpg" alt="">
-        </div>
         <div class="image-container hidden">
             <img src="img/index_page/tortenet.jpg" alt="Kép 1">
             <div class="image-text">Kezdetektól napjainkig</div>
@@ -37,8 +34,6 @@
         </div>
     </div>
 
-
-
     <script>
         const gallery = document.querySelector('.gallery');
         const images = document.querySelectorAll('.image-container');
@@ -46,7 +41,7 @@
 
         function checkScroll() {
             const galleryRect = gallery.getBoundingClientRect();
-            const triggerPoint = window.innerHeight /5; 
+            const triggerPoint = window.innerHeight / 3; // Képernyő közepe
 
             if (galleryRect.top <= triggerPoint && !animationTriggered) {
                 animationTriggered = true;
@@ -67,13 +62,10 @@
 
         window.addEventListener('scroll', checkScroll);
         window.addEventListener('load', () => {
-            gallery.style.marginTop = '10%';
+            gallery.style.marginTop = '25%';
             checkScroll();
         });
         window.addEventListener('resize', checkScroll);
-
-
-
     </script>
 </body>
 </html>
