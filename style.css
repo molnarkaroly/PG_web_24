@@ -137,3 +137,19 @@ body {
 .dsplynone{
     display: none;
 }
+
+
+
+.faliujsag_contener{
+    width: 60%;
+    margin: 0 auto;
+    color:  #3f486c;
+
+}
+
+.faliujsag_contener hr{
+    border: 1px solid #3f486c;
+    border-radius: 10px;
+    width: 90%;
+}
+
