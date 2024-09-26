@@ -316,6 +316,54 @@ nav {
 
 
 
+/*↓ELÉRHETŐSÉGEK↓*/
+@media (min-width: 901px) {
+    .terkepDiv{
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #3f486c;
+        box-shadow: 1px 5px 25px 5px #3f486c;
+        color: white;
+    
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .resList{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 900px) {
+    .terkepDiv{
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #3f486c;
+        box-shadow: 1px 5px 25px 5px #3f486c;
+        color: white;
+    
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        text-align: center;
+    }
+    .resList{
+        margin-left: 0px;
+    }
+}
+
+#maptable1{
+    width: 100%;
+}
+#maptable2{
+    width: 100%;
+}
+.terkepDiv iframe{
+    border-radius: 20px;
+    width: 100%;
+}
+
+/*↑ELÉRHETŐSÉGEK↑*/
+
+
+
 /*↓FOOTER↓*/
 footer{
     margin: 0 auto;
