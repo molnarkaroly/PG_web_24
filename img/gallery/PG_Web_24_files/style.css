@@ -429,21 +429,3 @@ object-position: center;
     background: linear-gradient(130deg, rgb(0, 128, 21), rgb(216, 112, 161));
   }
   
-  .g-date{
-    color: red;        
-    list-style-image: url('/img/index_page/date.ico');
-    width: 14px;
-    height: 14px;
-    list-style-image: none;
-    padding-left: 45%;
-}
-
-.g-date-div{
-    padding-bottom: 2%;
-}
-
-@media (max-width: 950px) {
-.gallery-pad{
-    padding-top: 10%;
-}
-}
