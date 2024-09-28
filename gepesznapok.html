@@ -9,18 +9,18 @@
 </head>
 <body>
 
-    <h1 style="padding-top: 15%; text-align: center; padding-bottom: 0%;">Cím: Gépésznapok</h1>
-    <div class="g-date-div">
-    <ul style="list-style: none;"><li><img src="/img/index_page/date.ico" class="g-date date_li">  2024. április 19.    </li></ul>
-    </div>
 
-    <div class="bar">
-        <a href="gallery.html" ">Galéria </a>
-        <a href="ujabbsiker.html" >Újabb siker </a>
-        <a href="szentbenedeknap.html" >Szent Benedek nap </a>
-        <a href="gepesznapok.html" style="color: red ;">Gépész napok <br> ^</a>
-        <div id="indicator"></div>
-    </div>
+    <div class="gallery-pad">
+      <h1 class="page_title"><section class="page_title_text">Galéria</section></h1>
+  
+      <div class="bar">
+          <a href="gallery.html" >Galéria </a>
+          <a href="ujabbsiker.html" >Újabb siker </a>
+          <a href="szentbenedeknap.html">Szent Benedek nap</a>
+          <a href="gepesznapok.html" style="color: red;">Gépész napok <br> ^</a>
+          <div id="indicator"></div>
+      </div>
+  </div>
 
     <div class="g-layout">
         <div class="imageGallery">
@@ -29,14 +29,22 @@
           <img class="g-img image" src="img/gallery/gepesznapok/image (2).gif"       onclick="handlers.open('5')">
           <img class="g-img image" src="img/gallery/gepesznapok/image (3).gif"       onclick="handlers.open('6')">
           <img class="g-img image" src="img/gallery/gepesznapok/image (4).gif"       onclick="handlers.open('7')">
-
+          <img class="g-img image" src="img/gallery/gepesznapok/image.gif"           onclick="handlers.open('8')">
+          <img class="g-img image" src="img/gallery/gepesznapok/image (1).gif"       onclick="handlers.open('9')">
+          <img class="g-img image" src="img/gallery/gepesznapok/image (2).gif"       onclick="handlers.open('10')">
+          <img class="g-img image" src="img/gallery/gepesznapok/image (3).gif"       onclick="handlers.open('11')">
+          <img class="g-img image" src="img/gallery/gepesznapok/image (4).gif"       onclick="handlers.open('12')">
         </div>
       </div>
       <div id="modalHolder">
         
       </div>
 
-      
+      <div class="g-video">
+        <h1>Videok</h1>
+        <iframe width="30%" height="80%" src="https://youtu.be/Y4pGBBDwpvo">
+        </iframe>
+      </div>
 
       <script>
         var modal = {
@@ -83,6 +91,9 @@ else{
 
 }
       </script>
+
+
+
 
 </body>
 </html>
