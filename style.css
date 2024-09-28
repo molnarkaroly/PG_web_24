@@ -360,6 +360,71 @@ nav {
     width: 100%;
 }
 
+.kretaButton{
+    width: 100%;
+    background-color: #3f486c;
+    box-shadow: 1px 5px 25px 5px #3f486c;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    border-radius: 20px;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.kretaButton:hover{
+    background-color: #5e6ca0;
+    box-shadow: 1px 5px 25px 5px #5e6ca0;
+}
+.kretaButton a{
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+.socialsButton{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.socialsButton div{
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 10%;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    border-radius: 20px;
+}
+.socialsButton div a{
+    font-size: 24px;
+    color: white;
+    width: 100%;
+}
+
+#sbFacebook{
+    background-color: #405269;
+    box-shadow: 1px 5px 25px 5px #405269;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+#sbFacebook:hover{
+    background-color: #617ca0;
+    box-shadow: 1px 5px 25px 5px #617ca0;
+}
+#sbYoutube{
+    background-color: #704646;
+    box-shadow: 1px 5px 25px 5px #704646;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+#sbYoutube:hover{
+    background-color: #a46565;
+    box-shadow: 1px 5px 25px 5px #a46565;
+}
+#sbInsta{
+    background-color: #6b5144;
+    box-shadow: 1px 5px 25px 5px #6b5144;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+#sbInsta:hover{
+    background-color: #9b7562;
+    box-shadow: 1px 5px 25px 5px #9b7562;
+}
+
 /*↑ELÉRHETŐSÉGEK↑*/
 
 
