@@ -79,10 +79,67 @@
 
 
     <div class="faliujsag_contener">
-        <h1>Faliújság</h1>
-        <hr>
+        <div class="reveal">
+            <h1>Faliújság</h1>
+            <hr>
+        </div>
+        <div class=" news">
+            <div class="reveal">
+                <h2 class=" reveal">Kedves PG-s diákok! </h2> 
+                <ul><li><img src="/img/index_page/date.ico" class="date_li">  2024. augusztus 29.</li></ul>
+            </div>
+
+            <p class="news_p reveal">Az alábbiakban tájékoztatlak benneteket a tanévkezdéssel kapcsolatban néhány fontos<br>tudnivalóról.<br>Az első tanítási nap <strong>2024.09.02-án (hétfő)</strong> lesz. A nap 8:10-től 12:40-ig fog tartani, melyet az<br>osztályfőnökeitekkel fogtok eltölteni.<br>Az első tanítási napon 9 órakor kerül sor a tanévnyitó ünnepségre a 10. évfolyam<br>szervezésében. Az ünnepségen hagyományainknak megfelelően ünneplőruha viselése<br>kötelező. A tankönyvosztásra is az első napon kerül majd sor.<br>Kérem, hogy hozzátok magatokkal a bizonyítványotokat, a közösségi szolgálati naplót és az<br>egybefüggő szakmai gyakorlat elvégzéséről szóló igazolást.<br>Az előző tanév végén, illetve a beiratkozás során leadott igénylés alapján már az első nap<br>biztosítjuk az étkezést az igénylőknek.<br><br></p>
+            <p class="news_p reveal">Tisztelt Szülők!<br>Új diákjaink szüleit <strong>2024. szeptember 9-én (hétfőn) 16 órától</strong> várjuk szülői értekezletre.<br>A többi osztályban <strong>2024. szeptember 10-én (kedden) 17 órától</strong> tartjuk az első szülői<br>értekezletet.<br>A Szülői Szervezet tagjait <strong>2024. szeptember 10-én (kedden) 16 órától</strong> várjuk megbeszélésre<br>az iskola 2-es termébe.<br><strong>Eredményes és élményekkel teli tanévet kívánok mindenkinek!</strong> <br> <br>Rokolya Csaba<br>igazgató</p>
+            <div style="padding-bottom:2% ;"></div>
+        </div>
+
+
+        <div class=" news">
+            <div class="reveal">
+                <h2 class=" reveal">Tájékoztató a 2024/2025-ös tanév kollégiumi beköltözéshez</h2> 
+                <ul><li><img src="/img/index_page/date.ico" class="date_li">  2024. augusztus 29.</li></ul>
+            </div>
+            <p class="news_p reveal">Tisztelt Szülő/Gondviselő!<br>A kollégiumi beköltözés időpontja 2024. 09. 01-én, vasárnap 14 órától 21 óráig lesz.<br><strong>Kérjük, az új 9. évfolyamos kollégistáink 18 óráig költözzenek be, mivel a kollégiumi tájékoztató a</strong><br><strong>szülők részére 18:15-kor fog kezdődni.</strong><br><span style="text-decoration: underline;">A következőket hozzák magukkal:</span><br>- lakat-pótkulcsokkal, névvel ellátva<br>- tisztálkodószerek, törölköző, papírzsebkendő<br>- evőeszköz, tányér, pohár (névvel ellátva)<br>- igény szerint saját ágynemű, huzat (a kollégium ágyneműt és huzatokat biztosít)<br>- ünneplő (fehér ing, sötét nadrág, lehetőség szerint nem sportcipő), illetve időszaknak megfelelő<br>ruházat<br>- papucs<br>- tanszerek<br>- szekrénybe ruhaakasztók (vállfa)<br>- saját gyógyszerek, ha szükséges<br>- 2000 Ft kollégiumi pénz, valamint 8&nbsp;000 Ft rongálási kaució (amit a tanulmányok befejezésekor<br>vissza fog kapni a diák, ha nem történt rongálás)<br>- 09. 01-én, vasárnap, a beköltözés napján mindenki saját maga gondoskodik az étkezéséről. A<br>kollégiumban biztosított első étkezés a hétfői reggeli.<br>- Az élelmiszerallergiások névvel ellátott ételtároló dobozokat, saját mosogatószivacsot hozzanak<br>magukkal!<br>Együttműködésüket előre is köszönve, szeretettel várjuk kollégiumunkba gyermeküket!<br>a Kiskunfélegyházi Szent Benedek PG Két Tanítási Nyelvű Technikum és Kollégiumi dolgozói</p>
+        </div>
+        <div style="padding-bottom:2% ;"></div>
+
+
+
+        <div class=" news">
+            <div class="reveal">
+                <h2 class=" reveal">Pályázat</h2> 
+                <ul><li><img src="/img/index_page/date.ico" class="date_li">  2024. augusztus 29.</li></ul>
+            </div>
+            <img class="reveal" src="img/index_page/palyazat.jpg" alt="">
+        </div>
+        <div style="padding-bottom:2% ;"></div>
+
     </div>
 
+
+        <!----><img style="width: 15%; padding-top: 10%;" src="img/index_page/1_23-min.jpg" alt="Kép 2">
+
+    <script>
+        function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 50;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+window.addEventListener("scroll", reveal);
+
+    </script>
 
 
 </body>

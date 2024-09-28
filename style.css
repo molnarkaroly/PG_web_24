@@ -143,7 +143,9 @@ body {
 .faliujsag_contener{
     width: 60%;
     margin: 0 auto;
+    padding-left: 20%;
     color:  #3f486c;
+    float: left;
 
 }
 
@@ -153,3 +155,149 @@ body {
     width: 90%;
 }
 
+
+
+.faliujsag_contener .news{
+    padding-left: 5%;
+}
+
+.faliujsag_contener .news_p{
+justify-content: center;
+font-size: 1.3em;
+}
+
+.faliujsag_contener .news .date_li{
+    color: red;        
+    list-style-image: url('/img/index_page/date.ico');
+    width: 14px;
+    height: 14px;
+    list-style-image: none;
+}
+
+.faliujsag_contener .news ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.faliujsag_contener .news img{
+    width: 80%;
+}
+
+
+
+
+ /* For animation transition */
+ .reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 2s all ease;
+    z-index: -1;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: -1;
+
+}
+
+  /* For animation transition */
+  .reveal_tab {
+    position: relative;
+    transform: translateY(1px);
+    opacity: 0;
+    transition: 2s all ease;
+
+}
+
+.reveal_tab.active {
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+
+/*------------------------------Gallery-------------*/
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+  
+.g-layout {
+  display: grid;
+  grid-template: 20px 40px auto / auto 300px 300px 300px auto;
+  grid-gap: 10px;
+  padding-top: 10%;
+}
+
+
+
+.imageGallery {
+  display: grid;
+  grid-template: repeat(3, 300px) / repeat(3, 300px);
+  grid-gap: 10px;
+  margin: 50px 50px 50px 50px;
+  align-content: center;
+  justify-content: center;
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 1;
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 0px 19px 0px 0px;
+  display: grid;
+  grid-template: 320px 50px / 320px;
+}
+
+.modalHolder {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.boxPhoto {
+  width: 360px;
+  z-index: 1001;
+
+}
+
+.closeButton {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  text-align: right;
+  font-size: 2em;
+  font-family: 'Arial Black';
+  cursor: pointer;
+}
+
+
+@media (max-width: 950px) {
+  .imageGallery {
+    grid-template: repeat(5, 300px) / repeat(2, 300px);
+    grid-column: 2 / span 2;
+  }
+  
+  .layout {
+    grid-template: 20px 40px auto / auto 300px 300px auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .imageGallery {
+    grid-template: repeat(9, 300px) / 300px;
+    grid-column: 2 / span 1;
+  }
+  
+  .layout {
+    grid-template: 20px 40px auto / auto 300px auto;
+  }
+}
