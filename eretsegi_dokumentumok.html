@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG_Web_24</title>
+    <script src="header/header.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="gallery-pad">
+      <h1 class="page_title"><section class="page_title_text">Dokumentumok</section></h1>
+  
+      <div class="bar">
+        <a href="dokumentumok.html" >Közzétételi lista </a>
+        <a href="alap_dokumentumok.html">Alapdokumentumok </a>
+        <a href="kozossegi_dokumentumok.html"  >Iskolai Közösségi Szolgálat </a>
+        <a id="bar-mini-more" href="eretsegi_dokumentumok.html" style="color: red;">Érettségi <br>      ^</a>
+        <div id="indicator"></div>
+    </div>
+</div>
+
+<div class="bar" id="bar-mini-one">
+  <a href="kozeleti_doc.html" style="color: red;">Éretségi <br>      ^</a>
+
+  <div id="indicator"></div>
+</div>
+</div>
+
+<script>
+    const sor = document.getElementById("bar-mini-more");
+    const mini = document.getElementById("bar-mini-one")
+    mini.style.display = 'none';
+
+function resizeWindow(){
+    if(window.innerWidth < 1000)
+    {
+        sor.style.display = "none";
+        mini.style.display = 'block';
+    }
+    else{
+        sor.style.display = "block";
+        mini.style.display = 'none';
+    }
+}
+resizeWindow();
+window.addEventListener('resize', resizeWindow);
+
+</script>
+
+
+  <div class="dokumentumok">
+    <p style="color: rgba(0, 0, 0, 0.425); text-align: center;">A 12/2020. (II.7.) Korm. r. 344 § alapján intézményünk az alábbiakban teszi közzé a jogszabályban meghatározott adatokat.</p>
+
+  <div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+
+<div class="download-container">
+    <div class="text-content">
+        <div class="title">Lorem ipsum dolor</div>
+        <div class="subtitle">lorem_ipsum_dolor.txt</div>
+    </div>
+    <button onclick="downloadFile()" class="download-button">Letöltés</button>
+</div>
+
+<script>
+    function downloadFile() {
+        // A fájl URL-je. Ezt módosítsa a tényleges fájl elérési útjára.
+        var fileUrl = '../lorem_ipsum_dolor.txt';
+        
+        // Létrehozunk egy ideiglenes 'a' elemet a letöltéshez
+        var link = document.createElement('a');
+        link.href = fileUrl;
+        
+        // Beállítjuk a fájlnevet a letöltéshez
+        link.download = 'lorem_ipsum_dolor.txt  ';
+        
+        // Hozzáadjuk a linkeket a DOM-hoz, elindítjuk a letöltést, majd eltávolítjuk a linket
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
+
+
+
+
+</body>
+</html>

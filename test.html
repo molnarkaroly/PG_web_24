@@ -1,71 +1,10 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Görgetésre Megjelenő Képgaléria</title>
-    <script src="header/header.js"> </script>
-    <link rel="stylesheet" href="style.css">
+    <title>Reszponzív képgyűjtemény animált feliratokkal</title>
+  
 </head>
 <body>
 
-   <!-- <div class="nyiltnapok-kep ">
-        <img src="img/index_page/nyiltnapok.jpg" alt="">
-    </div>
--->
-    <div class="gallery">
-        <div class="image-container hidden">
-            <img src="img/index_page/tortenet.jpg" alt="Kép 1">
-            <div class="image-text">Kezdetektól napjainkig</div>
-            <div class="image-first-text"><p>Iskolatörténet</p></div>
-
-        </div>
-        <div class="image-container hidden">
-            <img src="img/index_page/verseny.jpg" alt="Kép 2">
-            <div class="image-text">Versenyeink személyes jelenlét mellett kerülnek megrendezésre!</div>
-            <div class="image-first-text"><p>Versenyeink</p></div>
-
-        </div>
-        <div class="image-container hidden">
-            <img src="img/index_page/beiskolazas.jpg" alt="Kép 3">
-            <div class="image-text">2025/2026-os tanév</div>
-            <div class="image-first-text"><p>Beiskolázás</p></div>
-
-        </div>
-    </div>
-
-    <script>
-        const gallery = document.querySelector('.gallery');
-        const images = document.querySelectorAll('.image-container');
-        let animationTriggered = false;
-
-        function checkScroll() {
-            const galleryRect = gallery.getBoundingClientRect();
-            const triggerPoint = window.innerHeight / 3; // Képernyő közepe
-
-            if (galleryRect.top <= triggerPoint && !animationTriggered) {
-                animationTriggered = true;
-                images.forEach((img, index) => {
-                    setTimeout(() => {
-                        img.classList.remove('hidden');
-                        img.classList.add('visible');
-                    }, index * 0);
-                });
-            } else if (galleryRect.top > triggerPoint && animationTriggered) {
-                animationTriggered = false;
-                images.forEach(img => {
-                    img.classList.remove('visible');
-                    img.classList.add('hidden');
-                });
-            }
-        }
-
-        window.addEventListener('scroll', checkScroll);
-        window.addEventListener('load', () => {
-            gallery.style.marginTop = '25%';
-            checkScroll();
-        });
-        window.addEventListener('resize', checkScroll);
-    </script>
 </body>
 </html>

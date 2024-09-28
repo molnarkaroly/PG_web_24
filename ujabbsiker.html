@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG_Web_24</title>
+    <script src="header/header.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="gallery-pad">
+    <h1 class="page_title"><section class="page_title_text">Galéria</section></h1>
+
+    <div class="bar">
+        <a href="gallery.html" >Galéria </a>
+        <a href="ujabbsiker.html" style="color: red;" >Újabb siker <br> ^</a>
+        <a href="szentbenedeknap.html" >Szent Benedek nap </a>
+        <a href="gepesznapok.html" >Gépész napok </a>
+        <div id="indicator"></div>
+    </div>
+</div>
+
+
+
+    <div class="g-layout">
+        <div class="imageGallery">
+          <img class="g-img image" src="img/gallery/ujabbsiker/image.gif"           onclick="handlers.open('3')">
+          <img class="g-img image" src="img/gallery/ujabbsiker/image (1).gif"       onclick="handlers.open('4')">
+          <img class="g-img image" src="img/gallery/ujabbsiker/image (2).gif"       onclick="handlers.open('5')">
+        </div>
+      </div>
+      <div id="modalHolder">
+        
+      </div>
+
+      
+
+      <script>
+        var modal = {
+  modalHolder: document.getElementById('modalHolder'),
+  box: document.createElement('div'),
+  boxPhoto: document.createElement('img'),
+  closeButton: document.createElement('span'),
+  openModal: function(source) {
+    
+    this.modalHolder.appendChild(this.box);
+    this.box.appendChild(this.boxPhoto);
+    this.box.appendChild(this.closeButton);
+    
+    this.closeButton.textContent = 'x';
+    this.boxPhoto.src = source;
+    
+    this.box.className = 'modal';
+    this.closeButton.className = 'closeButton';
+    this.modalHolder.className = 'modalHolder';
+    this.boxPhoto.className = 'boxPhoto';
+
+    this.closeButton.addEventListener('click', handlers.close);
+  },
+  closeModal: function() {
+    this.modalHolder.innerHTML = '';
+    this.modalHolder.className = '';
+  }
+}
+
+if(window.innerWidth >900)
+{
+
+var handlers = {
+  open: function(n) {
+    var imageSource = document.getElementsByTagName('img')[n].src;
+    modal.openModal(imageSource);
+  },
+  close: function() {
+    modal.closeModal();
+  }
+}
+}
+else{
+
+}
+      </script>
+
+
+
+
+
+
+</body>
+</html>
