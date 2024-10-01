@@ -301,7 +301,7 @@ object-position: center;
   left: 40%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #3f486c
+  background-color: #3f486c;
   padding: 0px 19px 0px 0px;
   display: grid;
   grid-template: 480px 50px / 300px;
@@ -851,7 +851,7 @@ textarea {
          opacity: 1;
          transform: translate(-50%, -50%) scale(1.1);
      }
-=======
+
 @media (max-width: 625px) {
     .logo img {
         max-width: 450px;
