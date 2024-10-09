@@ -32,6 +32,34 @@ body {
         width: 90%;
     }    
 }
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+
+  background: #3f486c;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px #3f486c;
+  transition: background 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background: #5e6ca0;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px #5e6ca0;
+  backdrop-filter: blur(20px);
+}
 /*↑EXTRA↑*/
 
 
