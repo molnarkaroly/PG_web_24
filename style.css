@@ -38,20 +38,20 @@ body {
 
 /*↓NAVBAR↓*/
 .navbar-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 nav {
-    background-color: #3f486c;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    height: 60px;
+  background-color: #3f486c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 60px;
 }
 .gallery {
     display: flex;
@@ -370,21 +370,41 @@ object-position: center;
     display: table;
     margin: 0 auto;
     transform: translateY(-50%);
+    
+
   }
+  .dokumentumok-menu-bg{
+    background-color: #3f486c;
+    padding: 10%;
+    text-align: center;
+    }
+
+
+
+    .dokumentumok-menu-bg:nth-child(1){
+      border-radius: 35px 0 0 35px;
+    }
+
+    .dokumentumok-menu-bg:nth-child(4){
+      border-radius: 0 35px 35px 0;
+    }
+
   
   .bar  a {
     position: relative;
     width: 33.333%;
     display: table-cell;
     text-align: center;
-    color: #949494;
+    color: #ffffffd5;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     padding: 10px 20px;
     transition: 0.2s ease color;
+    
   }
-  
+    /*
+
   .bar  a:before,
   .bar  a:after {
     content: "";
@@ -406,7 +426,8 @@ object-position: center;
     width: 4px;
     height: 4px;
   }
-  
+
+
   .bar  a:nth-child(1):before {
     background-color: rgb(0, 0, 0);
   }
@@ -457,16 +478,17 @@ object-position: center;
     border-radius: 5px;
     transition: 0.2s ease left;
   }
-  
+  */
   .bar  a:hover {
-    color: #df0707;
+    color: #e0daac;
   }
   
   .bar  a:hover:before,
   .bar  a:hover:after {
     transform: scale(1);
   }
-  
+    /*
+
   .bar  a:nth-child(1):hover ~ #indicator {
     background: linear-gradient(130deg, yellow, red);
   }
@@ -496,7 +518,7 @@ object-position: center;
     left: 50%;
     background: linear-gradient(130deg, rgb(0, 128, 21), rgb(216, 112, 161));
   }
-
+*/
   .g-date{
     color: red;        
     list-style-image: url('/img/index_page/date.ico');
