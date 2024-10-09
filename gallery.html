@@ -8,21 +8,60 @@
     <script src="header/header.js"> </script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="overflow-x: hidden;">
 
     <div class="gallery-pad">
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <p class="t1 center munkatarsak-bg">Galéria</p>
       <br><br><br>
 
-    <div class="bar">
-        <a href="gallery.html" style="color: red;">Galéria ^</a>
-        <a href="ujabbsiker.html" >Újabb siker </a>
-        <a href="szentbenedeknap.html">Szent Benedek nap</a>
-        <a href="gepesznapok.html">Gépész napok</a>
-        <div id="indicator"></div>
+      <div class="bar">
+        <a class="dokumentumok-menu-bg"  style="text-align: center; justify-content: center; color: rgb(255, 149, 149);" href="gallery.html" >Galléria </a>
+        <a class="dokumentumok-menu-bg" style="text-align: center; justify-content: center;"href="gepesznapok.html">Gépésznapok </a>
+        <a class="dokumentumok-menu-bg" id="docmenulast" style="text-align: center; justify-content: center; " href="ujabbsiker.html"  >Ujabb siker</a>
+        <a class="dokumentumok-menu-bg" id="bar-mini-more" style="padding-bottom: 29px;" href="szentbenedeknap.html" >... </a>
+        <!--<div id="indicator"></div>-->
     </div>
 </div>
+
+<div class="bar" style="padding-left:32%;" id="bar-mini-one">
+  <a class="dokumentumok-menu-bg"  style="border-radius: 35px; padding-bottom: 29px;" href="szentbenedeknap.html" >... </a>
+
+</div>
+</div>
+
+<script>
+    const sor = document.getElementById("bar-mini-more");
+    const mini = document.getElementById("bar-mini-one")
+    const doclast = document.getElementById("docmenulast")
+    mini.style.display = 'none';
+    mini.style.borderRadius= '35px';
+
+function resizeWindow(){
+    if(window.innerWidth < 1000)
+    {
+        mini.style.borderRadius= '35px';
+        sor.style.display = "none";
+        mini.style.display = 'inline';
+        doclast.style.borderRadius= '0 35px 35px 0';
+
+
+    }
+    else{
+        sor.style.display = "inline";
+        mini.style.display = 'none';
+        mini.style.borderRadius= '35px';
+        doclast.style.borderRadius= '0 0px 0px 0';
+
+
+    }
+}
+resizeWindow();
+window.addEventListener('resize', resizeWindow);
+
+</script>
+
+
 
 
     <div class="g-layout ">
