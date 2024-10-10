@@ -15,48 +15,57 @@
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <p class="t1 center munkatarsak-bg">Dokumentumok</p>
         <br><br><br>
-  
-      <div class="bar">
-        <a href="dokumentumok.html" >Közzétételi lista </a>
-        <a href="alap_dokumentumok.html">Alapdokumentumok </a>
-        <a href="kozossegi_dokumentumok.html"  >Iskolai Közösségi Szolgálat </a>
-        <a id="bar-mini-more" href="eretsegi_dokumentumok.html" style="color: red;">Érettségi <br>      ^</a>
-        <div id="indicator"></div>
+    
+        <div class="bar">
+            <a class="dokumentumok-menu-bg"  style="text-align: center; justify-content: center; " href="dokumentumok.html" >Közzétételi lista </a>
+            <a class="dokumentumok-menu-bg" style="text-align: center; justify-content: center; "href="alap_dokumentumok.html">Alapdokumentumok </a>
+            <a class="dokumentumok-menu-bg" id="docmenulast" style="text-align: center; justify-content: center; " href="kozossegi_dokumentumok.html"  >Iskolai Közösségi Szolgálat </a>
+            <a class="dokumentumok-menu-bg" id="bar-mini-more" style="padding-bottom: 48px; color: rgb(255, 149, 149);" href="eretsegi_dokumentumok.html" >Érettségi  </a>
+            <!--<div id="indicator"></div>-->
+        </div>
     </div>
-</div>
-
-<div class="bar" id="bar-mini-one">
-  <a href="kozeleti_doc.html" style="color: red;">Éretségi <br>      ^</a>
-
-  <div id="indicator"></div>
-</div>
-</div>
-
-<script>
-    const sor = document.getElementById("bar-mini-more");
-    const mini = document.getElementById("bar-mini-one")
-    mini.style.display = 'none';
-
-function resizeWindow(){
-    if(window.innerWidth < 1000)
-    {
-        sor.style.display = "none";
-        mini.style.display = 'block';
-    }
-    else{
-        sor.style.display = "block";
+    
+    <div class="bar" style="padding-left:15%;" id="bar-mini-one">
+      <a class="dokumentumok-menu-bg" style="padding-bottom: 48px; color: rgb(255, 149, 149); border-radius: 35px;" href="eretsegi_dokumentumok.html" >Éretségi </a>
+    
+    </div>
+    </div>
+    
+    <script>
+        const sor = document.getElementById("bar-mini-more");
+        const mini = document.getElementById("bar-mini-one")
+        const doclast = document.getElementById("docmenulast")
         mini.style.display = 'none';
+        mini.style.borderRadius= '35px';
+    
+    function resizeWindow(){
+        if(window.innerWidth < 1000)
+        {
+            mini.style.borderRadius= '35px';
+            sor.style.display = "none";
+            mini.style.display = 'inline';
+            doclast.style.borderRadius= '0 35px 35px 0';
+    
+    
+        }
+        else{
+            sor.style.display = "inline";
+            mini.style.display = 'none';
+            mini.style.borderRadius= '35px';
+            doclast.style.borderRadius= '0 0px 0px 0';
+    
+    
+        }
     }
-}
-resizeWindow();
-window.addEventListener('resize', resizeWindow);
-
-</script>
+    resizeWindow();
+    window.addEventListener('resize', resizeWindow);
+    
+    </script>
 
 
   <div class="dokumentumok">
-    <p style="color: rgba(0, 0, 0, 0.425); text-align: center;">A 12/2020. (II.7.) Korm. r. 344 § alapján intézményünk az alábbiakban teszi közzé a jogszabályban meghatározott adatokat.</p>
-
+    <!--<p style="color: rgba(0, 0, 0, 0.425); text-align: center;">A 12/2020. (II.7.) Korm. r. 344 § alapján intézményünk az alábbiakban teszi közzé a jogszabályban meghatározott adatokat.</p>
+  -->
   <div class="download-container">
     <div class="text-content">
         <div class="title">Lorem ipsum dolor</div>
@@ -190,7 +199,7 @@ window.addEventListener('resize', resizeWindow);
         link.href = fileUrl;
         
         // Beállítjuk a fájlnevet a letöltéshez
-        link.download = 'lorem_ipsum_dolor.txt  ';
+        link.download = 'lorem_ipsum_dolor.txt';
         
         // Hozzáadjuk a linkeket a DOM-hoz, elindítjuk a letöltést, majd eltávolítjuk a linket
         document.body.appendChild(link);
@@ -199,8 +208,14 @@ window.addEventListener('resize', resizeWindow);
     }
 </script>
 
+  </div>
 
 
+  <!--ToTop Button-->
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">↑ TOP ↑</button>
+  <script src="toTop.js"></script>
+  <!--ToTop Button-->
+  
     <!--FOOTER-->
     <div id="footer-place"></div>
     <script src="footer/footer.js"></script>
